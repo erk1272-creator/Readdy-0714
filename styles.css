@@ -888,10 +888,11 @@ h3 {
 
 .recommend-grid article {
   display: flex;
+  flex-direction: column;
   gap: 18px;
   align-items: flex-start;
   min-width: 0;
-  min-height: 190px;
+  min-height: 220px;
   padding: 26px;
 }
 
@@ -902,24 +903,25 @@ h3 {
 
 .recommend-grid h3 {
   max-width: none;
-  margin-bottom: 14px;
-  font-size: 20px;
-  line-height: 1.55;
-  word-break: keep-all;
+  margin-bottom: 12px;
+  font-size: 19px;
+  line-height: 1.5;
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 
 .recommend-grid p {
   max-width: 32em;
   font-size: 16px;
   line-height: 1.9;
-  word-break: keep-all;
+  word-break: normal;
   overflow-wrap: anywhere;
 }
 
 .recommend-icon {
-  flex: 0 0 76px;
-  width: 76px;
-  height: 76px;
+  flex: 0 0 68px;
+  width: 68px;
+  height: 68px;
   background: radial-gradient(circle at 30% 25%, #fff, #ffe9f7 74%);
 }
 
