@@ -833,10 +833,39 @@ h3 {
   box-shadow: var(--soft-shadow);
 }
 
+.case-evidence {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+
+.search-result-shot {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid rgba(231, 220, 255, 0.92);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--soft-shadow);
+}
+
+.search-result-shot img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.search-result-shot figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
 .seo-proof {
   display: grid;
   align-content: center;
-  min-height: 240px;
+  min-height: 210px;
   padding: clamp(24px, 4vw, 34px);
   color: #fff;
   border-radius: 16px;
