@@ -14,7 +14,7 @@
     <meta property="og:image" content="assets/profile-photo.png">
     <link rel="preload" as="image" href="assets/readdy-logo.png">
     <link rel="preload" as="image" href="assets/profile-photo.png">
-    <link rel="stylesheet" href="styles.css?v=20260624-2">
+    <link rel="stylesheet" href="styles.css?v=20260624-3">
   </head>
   <body>
     <header class="site-header">
@@ -147,6 +147,29 @@
           </article>
         </div>
         <p class="section-note">ワークはホームページ作成が中心です。</p>
+      </section>
+
+      <section class="case-study" aria-labelledby="case-title">
+        <div class="section-title">
+          <span></span>
+          <h2 id="case-title">Readdyで作った自社HPの実例</h2>
+          <span></span>
+        </div>
+        <div class="case-panel">
+          <div class="case-copy">
+            <p class="section-kicker">Case Study</p>
+            <h3>AI to support株式会社 公式ホームページ</h3>
+            <p>
+              講師自身がReaddyで制作した自社HPです。広島を拠点に、法人様や自治体様向けのAI導入支援・AI研修を伝えるサイトとして公開しています。
+            </p>
+            <a class="case-link" href="https://aitosup.com/" target="_blank" rel="noopener">実際のサイトを見る</a>
+          </div>
+          <div class="seo-proof">
+            <span>SEO実績</span>
+            <strong>公開から半年間<br>SEO 1位・2位をキープ</strong>
+            <p>「広島 AI 研修会社」など、地域性のある検索でも見つけてもらいやすいHPづくりを実践しています。</p>
+          </div>
+        </div>
       </section>
 
       <section class="program" id="program" aria-labelledby="program-title">
@@ -319,7 +342,7 @@
       document.documentElement.classList.add("js");
 
       const revealItems = document.querySelectorAll(
-        ".features, .program, .recommend, .speaker, .details, .final-cta, .feature-cards article, .flow article, .support-band article, .recommend-grid article, .details-list div"
+        ".features, .case-study, .program, .recommend, .speaker, .details, .final-cta, .feature-cards article, .case-panel, .flow article, .support-band article, .recommend-grid article, .details-list div"
       );
 
       revealItems.forEach((item) => item.classList.add("reveal"));

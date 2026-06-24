@@ -650,6 +650,7 @@ h3 {
 }
 
 .features,
+.case-study,
 .program,
 .recommend,
 .speaker,
@@ -661,6 +662,7 @@ h3 {
 }
 
 .features,
+.case-study,
 .program,
 .recommend,
 .speaker,
@@ -774,6 +776,99 @@ h3 {
 .section-note {
   margin: 18px 0 0;
   padding-left: 2px;
+}
+
+.case-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  gap: clamp(22px, 4vw, 48px);
+  align-items: stretch;
+  padding: clamp(28px, 5vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(232, 95, 198, 0.14), transparent 18rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(250, 246, 255, 0.84));
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.case-copy {
+  display: grid;
+  align-content: center;
+}
+
+.case-copy h3 {
+  margin-bottom: 14px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.35;
+}
+
+.case-copy p {
+  max-width: 42em;
+  margin-bottom: 22px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.case-link {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px 22px;
+  color: var(--violet);
+  border: 1px solid var(--violet);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.78);
+  font-weight: 900;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.case-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--soft-shadow);
+}
+
+.seo-proof {
+  display: grid;
+  align-content: center;
+  min-height: 240px;
+  padding: clamp(24px, 4vw, 34px);
+  color: #fff;
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(122, 77, 241, 0.94), rgba(232, 95, 198, 0.9)),
+    var(--violet);
+  box-shadow: 0 22px 48px rgba(122, 77, 241, 0.24);
+}
+
+.seo-proof span {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.seo-proof strong {
+  display: block;
+  margin-bottom: 14px;
+  font-size: clamp(25px, 3vw, 36px);
+  line-height: 1.35;
+}
+
+.seo-proof p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 .program {
@@ -1253,6 +1348,7 @@ h3 {
 
   .hero,
   .features,
+  .case-study,
   .recommend,
   .speaker,
   .details,
@@ -1296,6 +1392,7 @@ h3 {
   .hero-feature-row,
   .event-bar,
   .feature-cards,
+  .case-panel,
   .flow,
   .support-band,
   .recommend-grid,
@@ -1400,6 +1497,23 @@ h3 {
 
   .feature-visual {
     min-height: 140px;
+  }
+
+  .case-panel {
+    padding: 24px;
+  }
+
+  .case-copy p,
+  .seo-proof p {
+    font-size: 15px;
+  }
+
+  .case-link {
+    width: 100%;
+  }
+
+  .seo-proof {
+    min-height: auto;
   }
 
   .speaker img {
